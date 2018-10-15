@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class LoginController {
+public class ChartController {
 
-    @RequestMapping("/login")
-    public String loginMessage(@RequestParam String name, @RequestParam Integer age, ModelMap model){
-        model.put("name", name.toUpperCase());
-        if (age != null)  model.put("age",age);
-        return "login";}
-}
+    @RequestMapping("/chart")
+    public String displayChart(@RequestParam String property, ModelMap model){
+        model.put("property", property);
+        return "chart";}
+    }
+
