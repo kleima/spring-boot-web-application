@@ -3,7 +3,10 @@
 <title>Web Application</title>
 </head>
 <body>
-Hello World JSP
-Welcome ${name} ! You are ${age} years old!
+  <form method="post">
+     Name <input type="text" name="name"/>
+     Password: <input type="password" name="password"/>
+     <input type="submit"/>
+  </form>
 </body>
 </html>
